@@ -8,13 +8,16 @@
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "cd frontend && yarn start",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": "https://github.com/MichaelSWong/proshop.git",
   "author": "Michael Wong <mizik_jah@yahoo.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
