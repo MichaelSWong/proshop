@@ -1,3 +1,6 @@
+/**
+ * Payment Screen
+ */
 import React, { useState } from 'react';
 import { Form, Button, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
